@@ -1,10 +1,13 @@
-## Numerical Methods
+# Numerical methods
 
-The code was written during PS's labs.  
-Semester 4, year 2021.  
-  
-### Useful utilities:  
+Code written for Applied Computer Science **Numerical methods** course at [AGH UST](https://www.agh.edu.pl/en) [WFiIS](https://www.fis.agh.edu.pl/en/).
+
+Semester `4`, year `2021`.
+
+## Tools used during the course
+
 `Makefile`:
+
 ```make
 CXX = gcc
 EXEC = test
@@ -35,6 +38,7 @@ clean:
 ```
 
 `CMakeLists.txt` (for GSL):
+
 ```cmake
 cmake_minimum_required(VERSION 3.19)
 project(nm2021 C)
@@ -64,4 +68,6 @@ add_executable(nmexe ${SOURCES})
 target_link_libraries(nmexe PUBLIC GSL::gsl GSL::gslcblas)
 ```
   
-Caveat emptor.
+## License
+
+Sources are licensed under MIT, a free and open-source license. For details, please see [the license file](LICENSE.md).
